@@ -1,2 +1,2 @@
 # Tourney-Tracker
-Simple tournament tracket tool
+Simple tournament Tracker tool
