@@ -271,6 +271,7 @@
             Margin = new Padding(5, 6, 5, 6);
             Name = "CreateTournamentForm";
             Text = "Create Tournament";
+            Load += this.CreateTournamentForm_Load;
             ResumeLayout(false);
             PerformLayout();
         }
