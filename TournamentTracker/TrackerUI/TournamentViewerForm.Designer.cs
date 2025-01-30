@@ -200,7 +200,7 @@
             AutoScaleDimensions = new SizeF(12F, 30F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
-            ClientSize = new Size(998, 585);
+            ClientSize = new Size(976, 585);
             Controls.Add(ScoreButton);
             Controls.Add(VSLabel);
             Controls.Add(TeamTwoScoreValue);
