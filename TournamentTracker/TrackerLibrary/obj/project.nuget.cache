@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "ECum1ez6LFcFEwyq0VWjVkEv/X0Q3VRFe7mD7ny7QQuL7IR20T3ZFh79tVErgscxzkZiEMDkkjNoYfBksPCeOQ==",
+  "dgSpecHash": "I/sgdMH1RUnVbaq5/dqcFJsUD0e4yIHmoFIaI6nBHQQQz8iur+su+nnN+XR/BWClo1+hE9vrh53Lei5ZtnL7vw==",
   "success": true,
   "projectFilePath": "C:\\Users\\Olaf\\Documents\\GitHub\\Tourney-Tracker\\TournamentTracker\\TrackerLibrary\\TrackerLibrary.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Olaf\\.nuget\\packages\\dapper\\2.1.66\\dapper.2.1.66.nupkg.sha512"
+  ],
   "logs": []
 }
