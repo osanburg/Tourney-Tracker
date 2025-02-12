@@ -1,4 +1,7 @@
-﻿namespace TrackerUI
+﻿using System.Drawing;
+using System.Windows.Forms;
+
+namespace TrackerUI
 {
     partial class TournamentViewerForm
     {
