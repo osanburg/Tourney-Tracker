@@ -9,15 +9,5 @@ namespace TrackerUI
         {
             InitializeComponent();
         }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void TeamOneName_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

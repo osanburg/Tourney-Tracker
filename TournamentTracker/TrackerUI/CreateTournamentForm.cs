@@ -24,6 +24,9 @@ namespace TrackerUI
             WireUpLists();
         }
 
+        /// <summary>
+        /// Enables the list boxes in the form to display data
+        /// </summary>
         private void WireUpLists()
         {
             SelectTeamDropDown.DataSource = null;

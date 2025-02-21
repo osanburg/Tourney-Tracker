@@ -80,7 +80,6 @@ namespace TrackerUI
             Round.Size = new Size(94, 37);
             Round.TabIndex = 2;
             Round.Text = "Round";
-            Round.Click += label1_Click;
             // 
             // RoundDropdown
             // 
@@ -123,7 +122,6 @@ namespace TrackerUI
             TeamOneName.Size = new Size(165, 37);
             TeamOneName.TabIndex = 6;
             TeamOneName.Text = "<team one>";
-            TeamOneName.Click += TeamOneName_Click;
             // 
             // TeamOneScoreLabel
             // 

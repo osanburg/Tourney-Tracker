@@ -49,7 +49,6 @@ namespace TrackerUI
             TournamentDashboardLabel.Size = new Size(385, 50);
             TournamentDashboardLabel.TabIndex = 13;
             TournamentDashboardLabel.Text = "Tournament Dashboard";
-            TournamentDashboardLabel.Click += TournamentDashboardLabel_Click;
             // 
             // LoadExistingTournamentDropDown
             // 
@@ -84,7 +83,6 @@ namespace TrackerUI
             LoadTournamentButton.TabIndex = 21;
             LoadTournamentButton.Text = "Load Tournament";
             LoadTournamentButton.UseVisualStyleBackColor = true;
-            LoadTournamentButton.Click += AddMemberButton_Click;
             // 
             // CreateTournamentButton
             // 

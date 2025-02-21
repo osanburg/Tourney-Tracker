@@ -33,7 +33,6 @@ namespace TrackerLibrary.DataAccess
             return model;
         }
 
-        // TODO - make the CreatePrize method actually save to a text file
         public PrizeModel CreatePrize(PrizeModel model)
         {
             // Load the text file and convert the text to List<PrizeModel>

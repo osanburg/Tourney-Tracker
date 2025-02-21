@@ -34,9 +34,11 @@ namespace TrackerUI
             selectedTeamMembers.Add(new PersonModel { FirstName = "Joe", LastName = "Smith" });
             selectedTeamMembers.Add(new PersonModel { FirstName = "Karen", LastName = "Complainer" });
 
-
         }
         
+        /// <summary>
+        /// Enables the list boxes in the form to display data
+        /// </summary>
         private void WireUpLists()
         {
             SelectTeamMemberDropDown.DataSource = null;
@@ -46,26 +48,6 @@ namespace TrackerUI
             TeamMembersListBox.DataSource = null;
             TeamMembersListBox.DataSource = selectedTeamMembers;
             TeamMembersListBox.DisplayMember = "FullName";
-        }
-
-        private void TeamOneScoreValue_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void AddNewMemberBox_Enter(object sender, EventArgs e)
-        {
-
-        }
-
-        private void CreateTeamForm_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void PhoneNumberLabel_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void CreateMemberButton_Click(object sender, EventArgs e)
