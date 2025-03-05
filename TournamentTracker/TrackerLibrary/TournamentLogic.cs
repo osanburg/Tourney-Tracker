@@ -34,6 +34,8 @@ namespace TrackerLibrary
 
             while (round <= rounds)
             {
+                // each loop from list of matchups from the previous round: add a matchup entry from previous round to a matchup of the current round,
+                // then if the are two matchup entries in the matchup: add the matchup to the current round and create a new matchup
                 foreach (MatchupModel match in previousRound)
                 {
                     currMatchup.Entries.Add(new MatchupEntryModel { ParentMatchup = match });
@@ -57,17 +59,19 @@ namespace TrackerLibrary
         private static List<MatchupModel> CreateFirstRound(int byes, List<TeamModel> teams)
         {
             List<MatchupModel> output = new List<MatchupModel>();
-            MatchupModel curr = new MatchupModel();
+            MatchupModel currMatchup = new MatchupModel();
 
+            // each loop from list of teams in the tourney: add a team to the matchup,
+            // then if there is bye or two teams in the matchup: add the matchup to the output then create a new matchup
             foreach(TeamModel team in teams)
             {
-                curr.Entries.Add(new MatchupEntryModel {TeamCompeting = team});
+                currMatchup.Entries.Add(new MatchupEntryModel {TeamCompeting = team});
 
-                if (byes > 0 || curr.Entries.Count > 1)
+                if (byes > 0 || currMatchup.Entries.Count > 1)
                 {
-                    curr.MatchupRound = 1;
-                    output.Add(curr);
-                    curr = new MatchupModel();
+                    currMatchup.MatchupRound = 1;
+                    output.Add(currMatchup);
+                    currMatchup = new MatchupModel();
 
                     if(byes > 0)
                     {
