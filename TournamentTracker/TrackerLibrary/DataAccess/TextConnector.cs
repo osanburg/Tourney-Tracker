@@ -10,10 +10,14 @@ namespace TrackerLibrary.DataAccess
 {
     public class TextConnector : IDataConnection
     {
+        // TODO - refactor code so that that it references the public file names in GlobalConfig instead of these private ones
         private const string PrizesFile = "PrizeModels.csv";
         private const string PeopleFile = "PersonModels.csv";
         private const string TeamFile = "TeamModels.csv";
         private const string TournamentFile = "TournamentModels.csv";
+        private const string MatchupFile = "MatchupModel.csv";
+        private const string MatchupEntryFile = "MatchupEntryModel.csv";
+
         public PersonModel CreatePerson(PersonModel model)
         {
             List<PersonModel> people = PeopleFile.FullFilePath().LoadFile().ConvertToPersonModels();
@@ -98,6 +102,8 @@ namespace TrackerLibrary.DataAccess
             }
 
             model.Id = currentId;
+
+            model.SaveRoundsToFile(MatchupFile, MatchupEntryFile);
 
             tournaments.Add(model);
 
